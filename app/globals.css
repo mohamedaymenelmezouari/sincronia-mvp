@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal: #0F6E56;
+  --teal-light: #1e9477;
+  --amber: #EF9F27;
+  --cream: #FFFEF9;
+  --dark-bg: #0C0F0E;
+  --dark-card: #131917;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-inter antialiased bg-cream text-gray-900;
+  background-color: var(--cream);
+}
+
+.dark body {
+  @apply bg-dark-bg text-gray-100;
+}
+
+/* Grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #0F6E56;
+  border-radius: 3px;
+}
+
+/* Section spacing */
+section {
+  @apply py-20 md:py-28;
+}
+
+/* Typography */
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #0F6E56 0%, #EF9F27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mesh gradient background */
+.mesh-bg {
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(15, 110, 86, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(239, 159, 39, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse at 50% 50%, rgba(15, 110, 86, 0.05) 0%, transparent 70%),
+    var(--cream);
+}
+
+.dark .mesh-bg {
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(15, 110, 86, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(239, 159, 39, 0.12) 0%, transparent 60%),
+    var(--dark-bg);
+}
+
+/* Card hover effects */
+.card-hover {
+  @apply transition-all duration-300;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(15, 110, 86, 0.12);
+}
+
+/* Amber button */
+.btn-amber {
+  @apply bg-amber-400 text-gray-900 font-jakarta font-700 px-6 py-3 rounded-xl;
+  @apply hover:bg-amber-500 transition-all duration-200;
+  @apply shadow-lg shadow-amber-400/25;
+}
+
+/* Teal button */
+.btn-teal {
+  @apply bg-teal-600 text-white font-jakarta font-600 px-6 py-3 rounded-xl;
+  @apply hover:bg-teal-700 transition-all duration-200;
+  @apply shadow-lg shadow-teal-600/25;
+}
+
+/* Slider custom styles */
+[data-radix-slider-root] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: 20px;
+}
+
+[data-radix-slider-track] {
+  background-color: #e5e7eb;
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 4px;
+}
+
+.dark [data-radix-slider-track] {
+  background-color: #1E2A24;
+}
+
+[data-radix-slider-range] {
+  position: absolute;
+  background-color: #0F6E56;
+  border-radius: 9999px;
+  height: 100%;
+}
+
+[data-radix-slider-thumb] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #0F6E56;
+  border-radius: 9999px;
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(15, 110, 86, 0.3);
+  transition: box-shadow 0.2s;
+}
+
+[data-radix-slider-thumb]:hover {
+  box-shadow: 0 4px 16px rgba(15, 110, 86, 0.4);
+}
+
+[data-radix-slider-thumb]:active {
+  cursor: grabbing;
+}
+
+/* Accordion */
+[data-radix-accordion-content] {
+  overflow: hidden;
+}
+
+[data-radix-accordion-content][data-state='open'] {
+  animation: slideDown 0.2s ease-out;
+}
+
+[data-radix-accordion-content][data-state='closed'] {
+  animation: slideUp 0.2s ease-out;
+}
+
+@keyframes slideDown {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes slideUp {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+/* WhatsApp bubble */
+.whatsapp-bubble-manager {
+  background: #0F6E56;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.whatsapp-bubble-agent {
+  background: white;
+  color: #1a1a1a;
+  border-radius: 18px 18px 18px 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dark .whatsapp-bubble-agent {
+  background: #1E2A24;
+  color: #e5e7eb;
+}
+
+@layer utilities {
+  .font-700 {
+    font-weight: 700;
+  }
+  .font-600 {
+    font-weight: 600;
+  }
+  .font-800 {
+    font-weight: 800;
+  }
+}
