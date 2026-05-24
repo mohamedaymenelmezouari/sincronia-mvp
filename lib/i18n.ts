@@ -10,19 +10,19 @@ export const translations = {
       cta: 'Empieza gratis',
     },
     hero: {
-      badge: 'Agente IA para hostelería',
-      headline: 'Tu gerente de turnos trabaja 24/7. Y no cobra extra.',
+      badge: 'Agente IA para clínicas dentales y salones',
+      headline: 'Tu coordinador de turnos trabaja 24/7. Y no cobra extra.',
       subheadline:
-        'SincronIA gestiona el cuadrante, cubre bajas y evita multas por ti. Solo dices qué necesitas.',
+        'SincronIA gestiona el cuadrante de tu clínica o salón, cubre bajas y evita multas por ti. Solo dices qué necesitas.',
       cta1: 'Solicita tu piloto gratis',
       cta2: 'Ver demo',
       chat: {
-        t1: 'Oye, María está de baja mañana. Necesito cubrir su turno de 9-17h',
-        t2: 'Entendido 🤖 Buscando cobertura para mañana 9-17h...',
-        t3: '✅ Carlos García disponible y confirmado. Ya le notifiqué.',
-        t4: '📋 Registro de jornada actualizado. Conforme al convenio.',
+        t1: 'Oye, la higienista Ana no puede venir mañana. Necesito cubrir sus citas de 9-14h',
+        t2: 'Entendido 🤖 Revisando disponibilidad para las citas de mañana 9-14h...',
+        t3: '✅ Laura Gómez disponible y confirmada. Pacientes notificados.',
+        t4: '📋 Registro de jornada actualizado. Conforme al convenio de sanidad privada.',
         t5: '¡Perfecto, gracias! 🙌',
-        manager: 'Gerente',
+        manager: 'Directora',
         agent: 'SincronIA',
         typing: 'escribiendo...',
       },
@@ -33,22 +33,22 @@ export const translations = {
         {
           stat: '6h/semana',
           title: 'En Excel y WhatsApp',
-          desc: 'Horas semanales desperdiciadas coordinando manualmente el cuadrante de turnos.',
+          desc: 'Horas semanales perdidas coordinando manualmente higienistas, auxiliares y recepción.',
         },
         {
           stat: '+€6.000',
           title: 'Multas por incumplir el convenio',
-          desc: 'Una sola infracción laboral puede costar más que un año de cualquier software.',
+          desc: 'Una sola infracción laboral en sanidad privada puede costar más que un año de cualquier software.',
         },
         {
           stat: 'Sin control',
           title: 'Bajas de última hora',
-          desc: 'Un mensaje de WhatsApp a las 7am y todo el cuadrante del día se derrumba.',
+          desc: 'Un WhatsApp a las 7am y los pacientes del día se quedan sin profesional asignado.',
         },
         {
-          stat: '>50%',
-          title: 'Rotación anual en hostelería',
-          desc: 'La alta rotación multiplica la carga de gestión de turnos para el gerente.',
+          stat: '>35%',
+          title: 'Rotación en clínicas y salones',
+          desc: 'La alta rotación en el sector multiplica la carga de gestión sobre el director/a.',
         },
       ],
     },
@@ -57,13 +57,13 @@ export const translations = {
       steps: [
         {
           label: 'Paso 1',
-          title: 'El gerente habla por WhatsApp',
-          desc: 'Envías un mensaje en lenguaje natural. Sin formularios, sin apps nuevas.',
+          title: 'El director/a habla por WhatsApp',
+          desc: 'Envías un mensaje en lenguaje natural. Sin formularios, sin apps nuevas que aprender.',
         },
         {
           label: 'Paso 2',
           title: 'La IA genera el cuadrante',
-          desc: 'El agente respeta el convenio colectivo, preferencias y disponibilidades automáticamente.',
+          desc: 'El agente respeta el convenio sectorial, las especialidades del equipo y las disponibilidades.',
         },
         {
           label: 'Paso 3',
@@ -73,11 +73,11 @@ export const translations = {
       ],
       features: [
         'Sin app que instalar para empleados',
-        'Convenio de hostelería integrado',
+        'Convenio de sanidad privada y peluquería integrado',
         'Registro de jornada automático',
-        'Previsión de demanda con IA',
-        'Cobertura inter-restaurantes (Fase 2)',
-        'Panel web para el gerente',
+        'Coordinación con agenda de citas',
+        'Cobertura inter-clínicas / salones (Fase 2)',
+        'Panel web para el director/a',
       ],
     },
     calculator: {
@@ -85,7 +85,7 @@ export const translations = {
       subtitle: 'Descubre tu ahorro real en segundos.',
       staff: 'Empleados en plantilla',
       hours: 'Horas/semana en cuadrantes',
-      rate: 'Coste hora gerente',
+      rate: 'Coste hora director/a',
       current: 'Coste actual mensual',
       savings: 'Ahorro con SincronIA',
       payback: 'Recuperas la inversión en',
@@ -113,7 +113,7 @@ export const translations = {
             'Registro de jornada automático',
             'Notificaciones a empleados',
             'Panel web básico',
-            '1 restaurante',
+            '1 clínica o salón',
           ],
         },
         {
@@ -125,11 +125,11 @@ export const translations = {
           limit: '11–30 empleados',
           features: [
             'Todo lo de Starter',
-            'Previsión de demanda con IA',
+            'Coordinación con agenda de citas',
             'KPIs y analítica de turnos',
             'Gestión de vacaciones',
             'Soporte prioritario',
-            'Hasta 3 restaurantes',
+            'Hasta 3 centros',
           ],
         },
         {
@@ -138,14 +138,14 @@ export const translations = {
           priceAnnual: '239',
           unit: '/mes',
           unitAnnual: '/mes',
-          limit: 'Multi-local / cadenas',
+          limit: 'Multi-centro / cadenas',
           features: [
             'Todo lo de Pro',
             'Marketplace de turnos cruzados',
-            'Cobertura entre restaurantes',
-            'API + integraciones POS',
+            'Cobertura entre centros',
+            'API + integraciones de agenda',
             'Gestor de cuenta dedicado',
-            'Locales ilimitados',
+            'Centros ilimitados',
           ],
         },
       ],
@@ -153,60 +153,28 @@ export const translations = {
       ctaSub: '30 días gratis · Sin tarjeta',
       from: 'Desde',
     },
-    testimonials: {
-      title: 'Por qué confían en SincronIA',
-      subtitle: 'Restaurantes reales. Resultados reales.',
-      items: [
-        {
-          quote:
-            'Antes tardaba 3 horas cada lunes haciendo el cuadrante. Ahora SincronIA lo tiene listo en 2 minutos y yo no toco nada.',
-          name: 'Alejandro Morales',
-          role: 'Gerente · Grupo Taberna del Sur, Madrid',
-          rating: 5,
-        },
-        {
-          quote:
-            'Tuve una baja el sábado a las 8 de la mañana. El agente cubrió el turno antes de que yo terminara el café. Increíble.',
-          name: 'Sandra Ruiz',
-          role: 'Directora de Operaciones · Restaurante El Jardín, Barcelona',
-          rating: 5,
-        },
-        {
-          quote:
-            'El registro de jornada automático me ha salvado en dos inspecciones. Cumplimos el convenio sin ni pensarlo.',
-          name: 'Tomás Iglesias',
-          role: 'Propietario · Brasserie Alcázar, Sevilla',
-          rating: 5,
-        },
-      ],
-      stats: [
-        { value: '200+', label: 'Restaurantes activos' },
-        { value: '4.8★', label: 'Valoración media' },
-        { value: '€1.200', label: 'Ahorro medio/mes' },
-      ],
-    },
     faq: {
       title: 'Preguntas frecuentes',
       items: [
         {
           q: '¿Necesitan mis empleados instalar algo?',
-          a: 'No. Los empleados reciben sus turnos por WhatsApp (el que ya usan). Solo el gerente accede al panel web opcional. Cero fricción para tu equipo.',
+          a: 'No. Los empleados reciben sus turnos por WhatsApp (el que ya usan). Solo el director/a accede al panel web opcional. Cero fricción para tu equipo.',
         },
         {
-          q: '¿Es legal la cesión de personal entre restaurantes?',
-          a: 'Sí, bajo la modalidad de "puesta a disposición" o acuerdos bilaterales entre empresas del mismo grupo. SincronIA solo propone coberturas dentro del marco legal y siempre requiere confirmación del gerente.',
+          q: '¿Es legal la cesión de personal entre clínicas o salones?',
+          a: 'Sí, bajo la modalidad de "puesta a disposición" o acuerdos bilaterales entre centros del mismo grupo. SincronIA solo propone coberturas dentro del marco legal y siempre requiere confirmación del director/a.',
         },
         {
-          q: '¿El agente cumple el convenio colectivo de hostelería?',
-          a: 'Sí. El convenio estatal de hostelería está integrado en la lógica del agente: descansos mínimos, horas máximas, pagos de festivos, registro de jornada... Todo se valida automáticamente antes de confirmar cualquier turno.',
+          q: '¿El agente cumple el convenio de sanidad privada y peluquería?',
+          a: 'Sí. Los convenios de sanidad privada y de peluquería/estética están integrados en la lógica del agente: descansos mínimos, horas máximas, festivos, registro de jornada... Todo se valida automáticamente antes de confirmar cualquier turno.',
         },
         {
           q: '¿Puedo cancelar cuando quiera?',
           a: 'Absolutamente. Sin permanencia, sin penalizaciones. Cancelas cuando quieras desde tu panel. Exportas todos tus datos en cualquier momento.',
         },
         {
-          q: '¿Cómo se integra con mi sistema actual?',
-          a: 'El agente funciona de forma autónoma desde el día 1. En el plan Pro y Network ofrecemos API REST + webhooks para integrarse con TPVs (Agora, ICG, etc.) y software de nóminas. El plan Starter no requiere ninguna integración.',
+          q: '¿Cómo se integra con mi software de agenda de citas?',
+          a: 'El agente funciona de forma autónoma desde el día 1. En el plan Pro y Network ofrecemos API REST + webhooks para integrarse con softwares como Clinicpro, Gesden, Fresha o cualquier agenda con API. El plan Starter no requiere ninguna integración.',
         },
         {
           q: '¿Qué pasa si el agente comete un error?',
@@ -216,7 +184,7 @@ export const translations = {
     },
     cta: {
       headline: 'Recupera tus horas. Evita las multas. Empieza hoy.',
-      sub: 'Únete a los restaurantes que ya gestionan sus turnos con IA.',
+      sub: 'Únete a las clínicas y salones que ya gestionan sus turnos con IA.',
       placeholder: 'tu@email.com',
       button: 'Quiero mi piloto gratis',
       note: '30 días gratis · Sin tarjeta · Sin permanencia',
@@ -239,19 +207,19 @@ export const translations = {
       cta: 'Start free',
     },
     hero: {
-      badge: 'AI agent for hospitality',
-      headline: 'Your shift manager works 24/7. And doesn\'t charge overtime.',
+      badge: 'AI agent for dental clinics & salons',
+      headline: 'Your shift coordinator works 24/7. And doesn\'t charge overtime.',
       subheadline:
-        'SincronIA handles scheduling, covers absences, and keeps you compliant. Just tell it what you need.',
+        'SincronIA handles scheduling for your clinic or salon, covers absences, and keeps you compliant. Just tell it what you need.',
       cta1: 'Request your free pilot',
       cta2: 'Watch demo',
       chat: {
-        t1: 'Hey, María is out sick tomorrow. I need to cover her 9-17h shift',
-        t2: 'Got it 🤖 Searching for coverage for tomorrow 9-17h...',
-        t3: '✅ Carlos García available and confirmed. Notification sent.',
-        t4: '📋 Work log updated. Fully compliant with labor law.',
+        t1: 'Hey, hygienist Ana can\'t make it tomorrow. I need to cover her 9-14h appointments',
+        t2: 'Got it 🤖 Checking availability to cover tomorrow\'s 9-14h slots...',
+        t3: '✅ Laura Gómez available and confirmed. Patients notified.',
+        t4: '📋 Work log updated. Fully compliant with private healthcare labor law.',
         t5: 'Perfect, thanks! 🙌',
-        manager: 'Manager',
+        manager: 'Director',
         agent: 'SincronIA',
         typing: 'typing...',
       },
@@ -262,22 +230,22 @@ export const translations = {
         {
           stat: '6h/week',
           title: 'On Excel and WhatsApp',
-          desc: 'Hours wasted every week manually coordinating staff schedules.',
+          desc: 'Hours wasted every week manually coordinating hygienists, assistants, and reception.',
         },
         {
           stat: '+€6,000',
           title: 'Fines for labor violations',
-          desc: 'A single labor infraction can cost more than a full year of any software.',
+          desc: 'A single labor infraction in private healthcare can cost more than a full year of any software.',
         },
         {
           stat: 'No control',
           title: 'Last-minute absences',
-          desc: 'A WhatsApp message at 7am and your entire day\'s schedule falls apart.',
+          desc: 'A WhatsApp at 7am and the day\'s patients are left without a professional assigned.',
         },
         {
-          stat: '>50%',
-          title: 'Annual turnover in hospitality',
-          desc: 'High turnover multiplies the scheduling burden on every manager.',
+          stat: '>35%',
+          title: 'Turnover in clinics & salons',
+          desc: 'High staff turnover multiplies the scheduling burden on every clinic director.',
         },
       ],
     },
@@ -286,13 +254,13 @@ export const translations = {
       steps: [
         {
           label: 'Step 1',
-          title: 'Manager sends a WhatsApp',
+          title: 'Director sends a WhatsApp',
           desc: 'You send a message in plain language. No forms, no new apps to learn.',
         },
         {
           label: 'Step 2',
           title: 'AI generates the schedule',
-          desc: 'The agent respects labor law, preferences, and availabilities automatically.',
+          desc: 'The agent respects the sector\'s labor law, staff specialties, and availabilities automatically.',
         },
         {
           label: 'Step 3',
@@ -302,11 +270,11 @@ export const translations = {
       ],
       features: [
         'No app to install for staff',
-        'Hospitality labor law built-in',
+        'Private healthcare & salon labor law built-in',
         'Automatic work log',
-        'AI demand forecasting',
-        'Cross-restaurant coverage (Phase 2)',
-        'Web dashboard for managers',
+        'Appointment calendar coordination',
+        'Cross-clinic / cross-salon coverage (Phase 2)',
+        'Web dashboard for clinic directors',
       ],
     },
     calculator: {
@@ -314,7 +282,7 @@ export const translations = {
       subtitle: 'Discover your real savings in seconds.',
       staff: 'Staff count',
       hours: 'Hours/week on scheduling',
-      rate: 'Manager hourly cost',
+      rate: 'Director hourly cost',
       current: 'Current monthly cost',
       savings: 'Savings with SincronIA',
       payback: 'You break even in',
@@ -342,7 +310,7 @@ export const translations = {
             'Automatic work log',
             'Staff notifications',
             'Basic web dashboard',
-            '1 restaurant',
+            '1 clinic or salon',
           ],
         },
         {
@@ -354,11 +322,11 @@ export const translations = {
           limit: '11–30 staff',
           features: [
             'Everything in Starter',
-            'AI demand forecasting',
+            'Appointment calendar coordination',
             'Shift KPIs & analytics',
             'Holiday management',
             'Priority support',
-            'Up to 3 restaurants',
+            'Up to 3 locations',
           ],
         },
         {
@@ -367,14 +335,14 @@ export const translations = {
           priceAnnual: '239',
           unit: '/mo',
           unitAnnual: '/mo',
-          limit: 'Multi-venue / chains',
+          limit: 'Multi-location / chains',
           features: [
             'Everything in Pro',
             'Cross-shift marketplace',
-            'Cross-restaurant coverage',
-            'API + POS integrations',
+            'Cross-location coverage',
+            'API + calendar integrations',
             'Dedicated account manager',
-            'Unlimited venues',
+            'Unlimited locations',
           ],
         },
       ],
@@ -382,60 +350,28 @@ export const translations = {
       ctaSub: '30 days free · No card',
       from: 'From',
     },
-    testimonials: {
-      title: 'Why restaurants trust SincronIA',
-      subtitle: 'Real restaurants. Real results.',
-      items: [
-        {
-          quote:
-            'It used to take me 3 hours every Monday to do the schedule. Now SincronIA has it ready in 2 minutes and I don\'t touch a thing.',
-          name: 'Alejandro Morales',
-          role: 'Manager · Grupo Taberna del Sur, Madrid',
-          rating: 5,
-        },
-        {
-          quote:
-            'I had a staff no-show at 8am on Saturday. The agent covered the shift before I finished my coffee. Incredible.',
-          name: 'Sandra Ruiz',
-          role: 'Operations Director · Restaurante El Jardín, Barcelona',
-          rating: 5,
-        },
-        {
-          quote:
-            'The automatic work log saved me in two labor inspections. We comply with every regulation without even thinking about it.',
-          name: 'Tomás Iglesias',
-          role: 'Owner · Brasserie Alcázar, Sevilla',
-          rating: 5,
-        },
-      ],
-      stats: [
-        { value: '200+', label: 'Active restaurants' },
-        { value: '4.8★', label: 'Average rating' },
-        { value: '€1,200', label: 'Avg monthly savings' },
-      ],
-    },
     faq: {
       title: 'Frequently asked questions',
       items: [
         {
           q: 'Do my employees need to install anything?',
-          a: 'No. Employees receive their shifts via WhatsApp (the one they already use). Only the manager accesses the optional web dashboard. Zero friction for your team.',
+          a: 'No. Employees receive their shifts via WhatsApp (the one they already use). Only the director accesses the optional web dashboard. Zero friction for your team.',
         },
         {
-          q: 'Is cross-restaurant staffing legal?',
-          a: 'Yes, under staff secondment agreements or bilateral arrangements between companies in the same group. SincronIA only proposes coverage within the legal framework and always requires manager confirmation.',
+          q: 'Is cross-location staffing legal?',
+          a: 'Yes, under staff secondment agreements or bilateral arrangements between locations in the same group. SincronIA only proposes coverage within the legal framework and always requires director confirmation.',
         },
         {
-          q: 'Does the agent comply with hospitality collective agreements?',
-          a: 'Yes. The national hospitality collective agreement is built into the agent\'s logic: minimum rest periods, maximum hours, holiday pay, work logs... Everything is validated automatically before confirming any shift.',
+          q: 'Does the agent comply with private healthcare and salon labor agreements?',
+          a: 'Yes. The private healthcare and hairdressing/aesthetics collective agreements are built into the agent\'s logic: minimum rest periods, maximum hours, holiday pay, work logs... Everything is validated automatically before confirming any shift.',
         },
         {
           q: 'Can I cancel anytime?',
           a: 'Absolutely. No commitment, no penalties. Cancel anytime from your dashboard. Export all your data whenever you want.',
         },
         {
-          q: 'How does it integrate with my current system?',
-          a: 'The agent works autonomously from day 1. Pro and Network plans offer REST API + webhooks to integrate with POS systems (Agora, ICG, etc.) and payroll software. The Starter plan requires no integration.',
+          q: 'How does it integrate with my appointment software?',
+          a: 'The agent works autonomously from day 1. Pro and Network plans offer REST API + webhooks to integrate with tools like Clinicpro, Gesden, Fresha, or any calendar with an API. Starter requires no integration.',
         },
         {
           q: 'What if the agent makes a mistake?',
@@ -445,7 +381,7 @@ export const translations = {
     },
     cta: {
       headline: 'Reclaim your hours. Avoid fines. Start today.',
-      sub: 'Join the restaurants already managing their shifts with AI.',
+      sub: 'Join the clinics and salons already managing their shifts with AI.',
       placeholder: 'your@email.com',
       button: 'I want my free pilot',
       note: '30 days free · No card · No commitment',
